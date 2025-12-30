@@ -1,13 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>Altın Değerlerim</title>
+<meta charset="UTF-8">
+<title>Altın Değerlerim</title>
+<style>
+body { font-family: Arial; margin: 30px; }
+#icerik { display: none; }
+.toplam { font-weight: bold; font-size: 22px; color: darkgreen; }
+</style>
 </head>
+
 <body>
-    <h1>📊 Günlük Altın Değerleri</h1>
-    <pre>
-Henüz veri yok
-    </pre>
+
+<div id="icerik">
+<h1>📊 Günlük Altın Değerleri</h1>
+<p>2025-12-30 21:29</p>
+<ul>
+<li>Gram: 338 × 6246.41 = 2,111,286.58 TL</li>
+<li>Çeyrek: 32 × 10007.0 = 320,224.00 TL</li>
+<li>Yarım: 7 × 19982.0 = 139,874.00 TL</li>
+<li>Bilezik: 140 × 5896.34 = 825,487.60 TL</li>
+</ul>
+<div class="toplam">⭐ TOPLAM: 3,396,872.18 TL ⭐</div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const sifre = prompt("Şifreyi giriniz:");
+    if (sifre === "yürrü") {
+        document.getElementById("icerik").style.display = "block";
+    } else {
+        document.body.innerHTML =
+        "<h2 style='color:red;text-align:center;margin-top:50px;'>Yetkisiz erişim ❌</h2>";
+    }
+});
+</script>
+
 </body>
 </html>
